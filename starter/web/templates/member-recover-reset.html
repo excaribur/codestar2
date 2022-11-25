@@ -1,0 +1,64 @@
+<#include "header.html">
+
+<section class="container">
+	<form method="post">
+		<h3>New Password</h3>
+		<section class="form-floating">
+			<input name="password"
+				   type="password"
+				   id="password"
+				   class="form-control"
+				   autocomplete="off"
+				   autofocus
+				   required
+				   placeholder="New Password" />
+			<label for="password">New Password</label>
+		</section>
+				
+		<section class="form-floating">
+			<input name="confirm"
+				   type="password"
+				   id="confirm"
+				   class="form-control"
+				   autocomplete="off"
+				   autofocus
+				   required
+				   placeholder="Confirm Password" />
+			<label for="confirm">Confirm Password</label>
+		</section>
+		
+		<input type="hidden" name="key" value="${secret ! ''}" />
+		<input type="hidden" name="reset" value="${code ! ''}" />
+
+		<button class="btn btn-primary">Create Password</button>
+		<a class="btn btn-light" href="/">Cancel</a>
+	</form>
+</section>
+
+<style>
+	body {
+		background: 
+		linear-gradient(220deg, rgba(255,0,0,.25), rgba(255,0,0,0) 70%),
+		linear-gradient(120deg, rgba(0,255,0,.25), rgba(0,255,0,0) 70%),
+		linear-gradient(330deg, rgba(0,0,255,.25), rgba(0,0,255,0) 70%);
+	}
+	form {
+		max-width: 20rem;
+		margin: 2rem auto;
+		padding: 1.5rem;
+		padding-top: 1.2rem;
+		border-radius: .75rem;
+		border: 1px solid #eee;
+		box-shadow: 0 .075rem .1rem #999;
+		background: white;
+		transition: box-shadow .25s linear;
+		opacity: .90;
+	}
+	form:hover {
+		box-shadow: 0 .075rem .1rem #666;
+	}
+</style>
+
+<#include "footer.html">
+
+

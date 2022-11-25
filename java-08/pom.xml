@@ -1,0 +1,10 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>my-company</groupId>
+    <artifactId>java-08</artifactId>
+    <version>0.25</version>
+    <properties>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
+    </properties>
+</project>
