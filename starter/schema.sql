@@ -1,4 +1,4 @@
-create database starter default charset 'utf8';   // keep data in asia language
+create database starter default charset 'utf8';   
 create user alice identified with mysql_native_password by 'bob';
 grant all on starter.* to alice;
 use starter;
