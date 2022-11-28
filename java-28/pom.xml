@@ -3,7 +3,15 @@
     <groupId>my-camopany</groupId>
     <artifactId>java-28</artifactId>
     <version>0.62</version>
-    
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.0.0</version>   <!--RELEASE-->
+        </dependency>
+
+    </dependencies>
     
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
